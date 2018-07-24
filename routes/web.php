@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/laravel-fd', 'FD\FDController@detectFaces');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
